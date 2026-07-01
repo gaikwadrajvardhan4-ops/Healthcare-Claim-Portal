@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Claims Analytics Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Healthcare Claims Analytics Portal</h1>
+        <p>Real-Time Processing Module with AI Insights</p>
+    </header>
+
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total Claims Received</h3>
+            <h1 id="claims">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Claims Processed</h3>
+            <h1 id="processed">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>AI Risk Alerts</h3>
+            <h1 id="alerts">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Processing Speed</h3>
+            <h1 id="speed">0/s</h1>
+        </div>
+
+    </div>
+
+
+
+    <!-- Progress -->
+    <section class="progress-section">
+
+        <h2>Claims Processing Status</h2>
+
+        <div class="progress">
+
+            <div class="progress-bar" id="progressBar"></div>
+
+        </div>
+
+        <p id="percentage">0%</p>
+
+    </section>
+
+
+
+    <!-- Claims Table -->
+
+    <section class="table-container">
+
+        <h2>Live Processed Claims</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Claim ID</th>
+                    <th>Patient</th>
+                    <th>Status</th>
+                    <th>AI Score</th>
+                    <th>Time</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

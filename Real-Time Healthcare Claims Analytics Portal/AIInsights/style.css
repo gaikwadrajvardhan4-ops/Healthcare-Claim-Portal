@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:50vh;
+}
+
+.container{
+    width: 1200px;
+    max-width: 2000px;
+    margin: auto;
+}
+
+h1{
+    color:#0077ff;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.card{
+    width: 5000px;
+    max-width: 1000px;
+}
+label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+    color:#333;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:2px solid #dbeafe;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#0077ff;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0077ff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056cc;
+}
+
+#result{
+    margin-top:20px;
+    font-size:20px;
+}

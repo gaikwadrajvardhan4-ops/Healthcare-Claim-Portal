@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting & Alerts Module</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📊 Reporting & Alerts Module</h1>
+
+    <div class="card">
+
+        <label>Report Name</label>
+        <input type="text" id="reportName"
+               placeholder="Enter Report Name">
+
+        <button onclick="generateReport()">
+            Generate Report
+        </button>
+
+        <button onclick="sendAlert()">
+            Send Alert
+        </button>
+
+        <h3>Generated Reports</h3>
+
+        <ul id="reportList"></ul>
+
+        <h3 id="alertMessage"></h3>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

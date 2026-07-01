@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Claims Data Ingestion Module</title>
+
+<link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+<h1>Healthcare Claims Analytics Portal</h1>
+
+<p>Claims Data Ingestion Module</p>
+
+</header>
+
+
+
+<div class="container">
+
+
+<div class="form-card">
+
+<h2>Upload Claim</h2>
+
+
+<input type="text" id="patientName"
+placeholder="Patient Name">
+
+
+<input type="text"
+id="claimType"
+placeholder="Claim Type">
+
+
+<input type="number"
+id="amount"
+placeholder="Amount">
+
+
+<button onclick="uploadClaim()">
+
+Upload Claim
+
+</button>
+
+
+</div>
+
+
+
+
+<div class="stats">
+
+<div class="card">
+
+<h3>Total Uploaded</h3>
+
+<h1 id="uploaded">0</h1>
+
+</div>
+
+
+<div class="card">
+
+<h3>Validated</h3>
+
+<h1 id="validated">0</h1>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Rejected</h3>
+
+<h1 id="rejected">0</h1>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<section>
+
+
+<h2>Recent Claims</h2>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Patient</th>
+<th>Type</th>
+<th>Amount</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

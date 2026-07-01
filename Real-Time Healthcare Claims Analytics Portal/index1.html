@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthcare Claims Dashboard</title>
+
+<script>
+window.onload = function () {
+    if (localStorage.getItem("loggedIn") !== "true") {
+        alert("Please login first");
+        window.location.href = "UserAuthentication/login.html";
+    }
+};
+
+function loadPage(page){
+    document.getElementById("frame").src = page;
+}
+</script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+}
+
+/* LAYOUT */
+body{
+    display:flex;
+    height:100vh;
+    background:#f4f7ff;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:260px;
+    background:#0a1f44;
+    padding:20px;
+    color:white;
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+    font-size:20px;
+    color:white;
+}
+
+.sidebar button{
+    width:100%;
+    padding:12px;
+    margin:6px 0;
+    border:none;
+    background:white;
+    color:#0a1f44;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.sidebar button:hover{
+    background:#dce6f7;
+}
+
+/* RIGHT SIDE */
+.main{
+    flex:1;
+    height:100vh;
+}
+
+/* iframe full screen */
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+    <h2>🏥 Dashboard</h2>
+
+    <button onclick="loadPage('AIInsights/ai-insights.html')">AI Insights</button>
+    <button onclick="loadPage('Admin/admin.html')">Admin</button>
+    <button onclick="loadPage('Storage/storage.html')">Storage</button>
+    <button onclick="loadPage('Reports/reports.html')">Reports</button>
+    <button onclick="loadPage('Claims/data.html')">Claims</button>
+    <button onclick="loadPage('Processing/processing.html')">Processing</button>
+    <button onclick="loadPage('Analytics/Analytics.html')">Analytics</button>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+    <iframe id="frame" src="welcome.html"></iframe>
+</div>
+
+</body>
+</html>

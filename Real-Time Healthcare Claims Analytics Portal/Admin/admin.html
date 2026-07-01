@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin & Configuration Module</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>⚙️ Admin & Configuration Module</h1>
+
+    <div class="card">
+
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+
+        <label>Role</label>
+        <select id="role">
+            <option>Admin</option>
+            <option>Analyst</option>
+            <option>Manager</option>
+        </select>
+
+        <button onclick="addUser()">
+            Add User
+        </button>
+
+        <h3>User List</h3>
+
+        <ul id="userList"></ul>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
